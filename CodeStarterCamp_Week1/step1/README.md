@@ -1,12 +1,6 @@
 #README
 
-
 # [Yagom-codeStarter] Jay-Winter 
-
-### [Week 0] Question
-
-=======
-# [Yagom-codeStarter] Jay-Winter
 
 ## [Week 0] Question
 
