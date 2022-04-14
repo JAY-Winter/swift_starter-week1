@@ -8,7 +8,6 @@
 
 import Foundation
 
-// 아이스크림 그리기 - 윗부분 만들기
 func makeTopOfIceCream(width: Int, height: Int) {
     let frame = width * height
     
@@ -21,12 +20,9 @@ func makeTopOfIceCream(width: Int, height: Int) {
 }
 
 
-// 아이스크림 그리기 - 아랫부분 만들기
-func makeIceCreamBar(frontSpace: Int, row: Int) {
-    // rowCount 는 쓰지 않으므로 "_" 처리 가능
-    for rowCount in 1...row {
-        // spaceCount 는 쓰지 않으므로 "_" 처리 가능
-        for spaceCount in 1...frontSpace {
+func makeIceCreamBar(frontSpace: Int, row: Int) {    
+    for _ in 1...row {
+        for _ in 1...frontSpace {
             print(" ", terminator: "")
         }
         print("| |")
@@ -34,6 +30,5 @@ func makeIceCreamBar(frontSpace: Int, row: Int) {
 }
 
 
-// 함수 실행
 makeTopOfIceCream(width: 11, height: 8)
 makeIceCreamBar(frontSpace: 4, row: 4)
