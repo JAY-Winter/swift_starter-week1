@@ -18,7 +18,8 @@ func makeTopOfIceCream(width: Int, height: Int) {
         }
     }
 }
-// 아이스크림 그리기 - 아랫부분 만들기
+
+
 func makeIceCreamBar(frontSpace: Int, row: Int) {    
     for _ in 1...row {
         for _ in 1...frontSpace {
@@ -29,6 +30,5 @@ func makeIceCreamBar(frontSpace: Int, row: Int) {
 }
 
 
-// 함수 실행
 makeTopOfIceCream(width: 11, height: 8)
 makeIceCreamBar(frontSpace: 4, row: 4)
