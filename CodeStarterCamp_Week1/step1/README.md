@@ -1,9 +1,14 @@
 #README
 
+<<<<<<< HEAD
 # [Yagom-codeStarter] Jay-Winter 
 
 ### [Week 0] Question
 
+=======
+# [Yagom-codeStarter] Jay-Winter
+## [Week 0] Question
+>>>>>>> step3
 1. 주기억 장치는 왜 주기억 장치라고 불릴까요?
 
 2. Week 0를 보면서 가장 인상 깊었던 것은 무엇이었으며, 그 이유는 무엇인가요?
@@ -38,6 +43,7 @@ RAM(Random Access Memory) : 임의 접근이 가능한 장치다.
 내가 배우고 싶었던 것이 여기있다고 생각이 들었고 딴 생각 안 하고   
 5주 어떻게든 따라가보자 ... 각오를 다시 하게 됐다.   
 모쪼록 화이팅!_!   
+<<<<<<< HEAD
 =======
 ### [Week 0] Answer
 1. 
@@ -80,3 +86,5 @@ RAM(Random Access Memory) : 임의 접근이 가능한 장치다.
  
 
  
+=======
+>>>>>>> step3
