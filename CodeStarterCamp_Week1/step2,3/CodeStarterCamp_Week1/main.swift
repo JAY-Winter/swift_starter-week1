@@ -39,24 +39,20 @@ func makeIceCreamBar(frontSpace: Int, row: Int) {
 
 // MARK: - STEP3 주문에 따른 빼빼로 그리기
 
-func makePeperoBar(height: Int) -> String {
-    let body: String = " | |"
-    var barBody: String = ""
+func makePeperoStick(height: Int) -> String {
+    let stick: String = " | |"
+    var peperoStick: String = ""
     
-    for line in 1...height {
-        if line != height {
-            barBody.append(body+"\n")
-        } else {
-            barBody.append(body)
-        }
+    for _ in 1...height {
+        peperoStick.append(stick+"\n")
     }
-    return barBody
+    return peperoStick
 }
 
 
 func makePeperoBody(body: String, topping: String) -> String {
     var peperoBody: String = ""
-
+    
     if topping.isEmpty {
         peperoBody = " \(topping)\(body)"
     } else {
@@ -82,33 +78,33 @@ func makePeperoWholeBody(bodyHeight: Int, peperoBody: String) -> String {
 }
 
 
-func makeWholePepero(bodyHeight: Int, body: String, topping: String, barHeight: Int) -> String {
-    let lineOfPeperoBody = makePeperoBody(body: body, topping: topping)
-    let peperoBody = makePeperoWholeBody(bodyHeight: bodyHeight, peperoBody: lineOfPeperoBody)
-    let peperoBar = makePeperoBar(height: barHeight)
-    let wholePepero = peperoBody + peperoBar
+func makeWholePepero(bodyHeight: Int, body: String, topping: String, stickHeight: Int) -> String {
+    let peperoBody = makePeperoBody(body: body, topping: topping)
+    let peperoWholeBody = makePeperoWholeBody(bodyHeight: bodyHeight, peperoBody: peperoBody)
+    let peperoStick = makePeperoStick(height: stickHeight)
+    let wholePepero = peperoWholeBody + peperoStick
     
     print("bodyHeight: \(bodyHeight)")
     print("body: \(body)")
     print("topping: \(topping)")
-    print("barHeight: \(barHeight)")
+    print("barHeight: \(stickHeight)")
     
     return wholePepero
 }
 
 // MARK: - 실행예시
-
+//
 // 실행 예시 1
-// print(makeWholePepero(bodyHeight: 4, body: "***", topping: "", barHeight: 10))
-
+// print(makeWholePepero(bodyHeight: 4, body: "***", topping: "", stickHeight: 10))
+//
 // 실행 예시 2
-// print(makeWholePepero(bodyHeight: 12, body: "***", topping: "&", barHeight: 4))
-
+// print(makeWholePepero(bodyHeight: 12, body: "***", topping: "&", stickHeight: 4))
+//
 // 실행 예시 3
-// print(makeWholePepero(bodyHeight: 12, body: "***", topping: "#", barHeight: 6))
-
+// print(makeWholePepero(bodyHeight: 12, body: "***", topping: "#", stickHeight: 6))
+//
 // 실행 예시 4
-// print(makeWholePepero(bodyHeight: 6, body: "|0|", topping: "", barHeight: 4))
-
+// print(makeWholePepero(bodyHeight: 6, body: "|0|", topping: "", stickHeight: 4))
+//
 // 실행 예시 5
-// print(makeWholePepero(bodyHeight: 5, body: "@@@", topping: "", barHeight: 4))
+// print(makeWholePepero(bodyHeight: 5, body: "@@@", topping: "", stickHeight: 4))
