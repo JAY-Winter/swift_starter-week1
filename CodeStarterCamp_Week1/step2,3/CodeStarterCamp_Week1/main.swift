@@ -83,10 +83,15 @@ func makePeperoWholeBody(bodyHeight: Int, peperoBody: String) -> String {
 
 
 func makeWholePepero(bodyHeight: Int, body: String, topping: String, barHeight: Int) -> String {
-    let lineOfBody = makePeperoBody(body: body, topping: topping)
-    let peperoBody = makePeperoWholeBody(bodyHeight: bodyHeight, peperoBody: lineOfBody)
+    let lineOfPeperoBody = makePeperoBody(body: body, topping: topping)
+    let peperoBody = makePeperoWholeBody(bodyHeight: bodyHeight, peperoBody: lineOfPeperoBody)
     let peperoBar = makePeperoBar(height: barHeight)
     let wholePepero = peperoBody + peperoBar
+    
+    print("bodyHeight: \(bodyHeight)")
+    print("body: \(body)")
+    print("topping: \(topping)")
+    print("barHeight: \(barHeight)")
     
     return wholePepero
 }
@@ -104,3 +109,6 @@ func makeWholePepero(bodyHeight: Int, body: String, topping: String, barHeight: 
 
 // 실행 예시 4
 // print(makeWholePepero(bodyHeight: 6, body: "|0|", topping: "", barHeight: 4))
+
+// 실행 예시 5
+// print(makeWholePepero(bodyHeight: 5, body: "@@@", topping: "", barHeight: 4))
