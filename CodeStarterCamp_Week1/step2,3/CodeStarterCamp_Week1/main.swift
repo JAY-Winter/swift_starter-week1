@@ -53,7 +53,7 @@ func makePeperoBar(height: Int) -> String {
     return barBody
 }
 
-// oneBiteOfPeperoBody, aBiteOfPeperoBody
+
 func makePeperoBody(body: String, topping: String) -> String {
     var peperoBody: String = ""
 
