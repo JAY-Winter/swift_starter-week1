@@ -84,10 +84,15 @@ func makeWholePepero(bodyHeight: Int, body: String, topping: String, stickHeight
     let peperoStick = makePeperoStick(height: stickHeight)
     let wholePepero = peperoWholeBody + peperoStick
     
-    print("bodyHeight: \(bodyHeight)")
-    print("body: \(body)")
-    print("topping: \(topping)")
-    print("barHeight: \(stickHeight)")
+    print("""
+    -------------------------
+    실행 예시 정보
+    bodyHeight: \(bodyHeight)
+    body: \(body)
+    topping: \(topping)
+    stickHeight: \(stickHeight)
+    -------------------------
+    """)
     
     return wholePepero
 }
@@ -95,16 +100,16 @@ func makeWholePepero(bodyHeight: Int, body: String, topping: String, stickHeight
 // MARK: - 실행예시
 //
 // 실행 예시 1
-// print(makeWholePepero(bodyHeight: 4, body: "***", topping: "", stickHeight: 10))
+print(makeWholePepero(bodyHeight: 4, body: "***", topping: "", stickHeight: 10))
 //
 // 실행 예시 2
-// print(makeWholePepero(bodyHeight: 12, body: "***", topping: "&", stickHeight: 4))
+print(makeWholePepero(bodyHeight: 12, body: "***", topping: "&", stickHeight: 4))
 //
 // 실행 예시 3
-// print(makeWholePepero(bodyHeight: 12, body: "***", topping: "#", stickHeight: 6))
+print(makeWholePepero(bodyHeight: 12, body: "***", topping: "#", stickHeight: 6))
 //
 // 실행 예시 4
-// print(makeWholePepero(bodyHeight: 6, body: "|0|", topping: "", stickHeight: 4))
+print(makeWholePepero(bodyHeight: 6, body: "|0|", topping: "", stickHeight: 4))
 //
 // 실행 예시 5
-// print(makeWholePepero(bodyHeight: 5, body: "@@@", topping: "", stickHeight: 4))
+print(makeWholePepero(bodyHeight: 5, body: "@@@", topping: "", stickHeight: 4))
